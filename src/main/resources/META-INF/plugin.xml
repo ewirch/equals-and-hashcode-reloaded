@@ -1,0 +1,29 @@
+<idea-plugin>
+	<id>net.omikron.equalsandhashcodereloaded</id>
+	<name>equals() and hashCode() reloaded</name>
+	<version>1.0</version>
+	<vendor email="ew@omikron.net" url="http://www.omikron.net">Omikron Data Quality GmbH</vendor>
+
+	<description><![CDATA[
+      Contains inspections:
+      	"Field not used in 'equals()/hashCode()' method": Will check if equals() and hashCode() implementations cover all class fields.
+    ]]></description>
+
+	<change-notes><![CDATA[
+    ]]>
+	</change-notes>
+
+	<!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+	<idea-version since-build="145.0"/> <!-- IntelliJ IDEA 2016.1 -->
+
+	<depends>com.intellij.modules.java</depends>
+
+	<extensions defaultExtensionNs="com.intellij">
+		<localInspection groupPath="Java" language="JAVA" shortName="FieldNotUsedInEqualsHashCode"
+						 displayName="Field not used in 'equals()/hashCode()' method" groupKey="group.names.probable.bugs"
+						 groupBundle="messages.InspectionsBundle"
+						 enabledByDefault="true" level="WARNING" runForWholeFile="true"
+						 implementationClass="net.omikron.FieldNotUsedInEqualsHashCodeInspection"/>
+	</extensions>
+	<actions/>
+</idea-plugin>

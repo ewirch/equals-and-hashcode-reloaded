@@ -1,0 +1,38 @@
+
+plugins {
+  id "org.jetbrains.intellij" version "0.2.7"
+  id "java"
+}
+
+apply plugin: 'org.jetbrains.intellij'
+apply plugin: 'maven'
+apply plugin: 'java'
+apply plugin: 'idea'
+
+group = 'net.omikron'
+description = 'Equals-And-HashCode-Reloaded Inpection for IntelliJ IDEA'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+intellij {
+  if (project.hasProperty("ijVersion")) {
+    version ijVersion
+  } else {
+    version '2017.1'
+  }
+  pluginName 'EqualsAndHashCodeReloaded'
+  updateSinceUntilBuild false
+  type 'IC'
+}
+
+dependencies {
+    compile 'org.slf4j:slf4j-api:1.7.21'
+
+    testCompile 'junit:junit:4.12'
+}
