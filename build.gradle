@@ -9,7 +9,7 @@ apply plugin: 'maven'
 apply plugin: 'java'
 apply plugin: 'idea'
 
-group = 'net.omikron'
+group = 'net.wirch'
 description = 'Equals-And-HashCode-Reloaded Inpection for IntelliJ IDEA'
 
 sourceCompatibility = 1.8

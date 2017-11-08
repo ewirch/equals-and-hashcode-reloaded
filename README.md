@@ -9,6 +9,4 @@ The inspection is automatically enabled after installation. If a class contains 
 
 ## License
 
-Copyright 2017 Omikron Data Quality GmbH.
-
 Licensed under the [GNU Lesser General Public License, Version 3.0](http://www.gnu.org/licenses/lgpl.txt)

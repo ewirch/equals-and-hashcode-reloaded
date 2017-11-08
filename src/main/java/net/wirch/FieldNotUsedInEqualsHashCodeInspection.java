@@ -1,4 +1,4 @@
-package net.omikron;
+package net.wirch;
 
 import java.util.HashMap;
 import java.util.HashSet;

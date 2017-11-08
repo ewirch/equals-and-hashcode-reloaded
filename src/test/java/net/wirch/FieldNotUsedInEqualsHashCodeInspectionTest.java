@@ -1,4 +1,4 @@
-package net.omikron;
+package net.wirch;
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;

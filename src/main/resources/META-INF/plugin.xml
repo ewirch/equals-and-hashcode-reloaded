@@ -1,8 +1,8 @@
 <idea-plugin>
-	<id>net.omikron.equalsandhashcodereloaded</id>
+	<id>net.wirch.equalsandhashcodereloaded</id>
 	<name>equals() and hashCode() reloaded</name>
 	<version>1.0</version>
-	<vendor email="ew@omikron.net" url="http://www.omikron.net">Omikron Data Quality GmbH</vendor>
+	<vendor email="wirch.eduard@gmail.com" url="https://ewirch.github.com">Eduard Wirch</vendor>
 
 	<description><![CDATA[
       Contains inspections:
@@ -23,7 +23,7 @@
 						 displayName="Field not used in 'equals()/hashCode()' method" groupKey="group.names.probable.bugs"
 						 groupBundle="messages.InspectionsBundle"
 						 enabledByDefault="true" level="WARNING" runForWholeFile="true"
-						 implementationClass="net.omikron.FieldNotUsedInEqualsHashCodeInspection"/>
+						 implementationClass="net.wirch.FieldNotUsedInEqualsHashCodeInspection"/>
 	</extensions>
 	<actions/>
 </idea-plugin>
